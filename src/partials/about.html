@@ -1,0 +1,95 @@
+<section class="section-about" id="about_us">
+        <div class="container">
+            <div class="about-subtitle">
+                <h3 class="about-title_1">tradition and love</h3>
+                <h1 class="about-title_2">how it’s made?</h1>
+            </div>
+    
+            <div class="about-images">
+<!-- 
+                <img class="about-images-item"
+                srcset="./images/mobile_cow1x.jpg 1x, ./images/mobile_cow2x.jpg 2x" 
+                src="./images/cow-tablet.png" alt="how it’s made?"> -->
+
+                <picture aria-label="milk">
+                    <!-- Перебор фото під  разні типи пристроїв -->
+                    <!-- фото типу - webp (desktop/tablet/mobil)-->
+
+                <source srcset="./images/cor-desktop.webp 1x, 
+                    ./images/cor-desktop@2x.webp 2x"
+                    media="(min-width: 1280px)" type="image/webp"/>
+
+                <source srcset="./images/cor-tablet.webp 1x,
+                    ./images/cor-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp"/>
+
+                <source srcset="./images/cor-mobile.webp 1x,
+                    ./images/cor-mobile@2x.webp 2x" 
+                    media="(min-width: 320px)"  type="image/webp"/>
+                    <!-- фото типу - png (desktop/tablet/mobil)-->
+
+                <source srcset="./images/cor-desktop.png 1x,
+                    ./images/cor-desktop@2x.png 2x"
+                    media="(min-width: 1280px)" type="image/jpg"/>
+
+                <source srcset="./images/cor-tablet.png 1x,
+                    ./images/cor-tablet@2x.png 2x"
+                    media="(min-width: 768px)" type="image/jpg"/>
+
+                <source srcset="./images/cor-mobile.png 1x,
+                    ./images/cor-mobile@2x.png 2x"
+                    media="(min-width: 320px)" type="image/jpg"/>
+
+                <img class="about-images-item"
+                    src="./images/cor-tablet.png" alt="how it’s made?"/>
+
+                </picture> 
+
+                <div class="about-description-button">
+                    <p class="about-discription1 ">
+                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                    cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+                    justo fringilla.
+                    </p>
+
+                    <p class="about-description_2">
+                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                    Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+                    suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                    tincidunt.
+                    </p>
+                
+                    <p class="about-description_3">
+                    Aliquam erat volutpat. Aenean accumsan.
+                    </p>
+    
+                    <button class="button button-light button-arrow" type="button">
+                        <span class="about-button-title">Read&nbsp;more</span>
+                        <svg class="about-images_svg" height="8" width="8">
+                            <use href="./images/symbol-defs.svg#direction_icon"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>    
+                <ul class="about-list" id="how_made">
+                <li class="about-list-item">
+                    <strong class="about-item-namber">721</strong>
+                    <p class="about-item-text">
+                        Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                    </p>
+                </li>
+                <li class="about-list-item">
+                    <strong class="about-item-namber">16kg</strong>
+                    <p class="about-item-text">
+                        Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                    </p>
+                </li>
+                <li class="about-list-item">
+                    <strong class="about-item-namber">84</strong>
+                    <p class="about-item-text">
+                        Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                    </p>
+                </li>
+                </ul>
+        </div>
+</section> 

@@ -1,0 +1,133 @@
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-family: DM Sans;
+}
+
+.modal-form-name {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main_accent_color;
+    margin-bottom: 12px;
+}
+
+.modal-form_input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 10px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border-color: $header_bg_color;
+    }
+}
+
+.acceptanse {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $font_description_color;
+    margin-left: 10px;
+
+    @media screen and(max-width: 479px) {
+        font-size: 11px;
+        line-height: 1.16;
+    }
+
+    @media screen and(min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.modal-form_label {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $font_description_color;
+    margin-bottom: 4px;
+}
+
+.modal-form_input-wrapper {
+    margin-bottom: 10px;
+}
+
+.modal-checkbox_line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+//Кнопка
+.btn {
+    display: block;
+    background-color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $main_accent_color;
+    font-family: inherit;
+    border: 0;
+    border-radius: 22px;
+    padding: 12px 37px;
+    transition: background-color 250ms $function-time;
+
+    &:hover,
+    &:focus {
+        background-color: $focus-second-btn;
+        cursor: pointer;
+    }
+
+    &-colored {
+        background-color: $radio-btn-active;
+        color: $white;
+        transition: background-color 250ms $function-time;
+
+        &:hover,
+        &:focus {
+            background-color: $focus-btn;
+            cursor: pointer;
+        }
+    }
+}
+
+.modal-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    border-radius: 22px;
+    color: $autofocus-btn;
+    background: $white;
+    &:hover,
+    &:focus {
+        color: $white;
+        background: $autofocus-btn;
+    }
+
+    @media screen and(min-width: 1200px) {
+        &:hover,
+        &:focus {
+            background: $focus-second-btn;
+        }
+    }
+}

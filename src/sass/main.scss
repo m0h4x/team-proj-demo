@@ -4,4 +4,26 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+
+// Import all utils here
+@import './utils/fonts';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// Import all components here:
+
+@import './components/common';
+@import './components/about';
+@import './components/footer';
+@import './components/buttons';
+@import './components/locations';
+@import './components/products';
+@import './components/gallery';
+@import './components/custommer-reviews';
+@import './layout/header';
+@import './components/_mobile_menu.scss';
+@import './components/backdrop';
+@import './components/modal-form';
+@import './components/modal';

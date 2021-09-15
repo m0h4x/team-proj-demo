@@ -1,0 +1,211 @@
+.locations {
+  @media screen and (max-width: 768px) {
+    background-image: linear-gradient(to bottom, $white 5.5%, $main_bg_color 5.5%);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, $white 12%, $main_bg_color 12%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/locations.png'),
+      linear-gradient(to bottom, $white 14.5%, $main_bg_color 14.5%);
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__svg-icon {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+  }
+
+  &__title {
+    margin-top: 61px;
+    text-align: center;
+    visibility: hidden;
+    font-size: 0;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 94px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 107px;
+    }
+  }
+
+  &-picture {
+    background-repeat: no-repeat;
+  }
+
+  &--text-alight {
+    text-align: center;
+    margin-top: 54px;
+    @media screen and (min-width: 768px) {
+      margin-top: 81px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 86px;
+    }
+  }
+}
+.locations-address-list {
+  a:hover,
+  a:focus {
+    border-radius: 5px;
+    color: $font_theme_color;
+    background-color: $footer_border_color;
+    box-shadow: 0 0 10px $footer_border_color, 0 0 40px $footer_border_color,
+      0 0 80px $footer_border_color;
+  }
+}
+.locations-list {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-wrap: nowrap;
+  }
+
+  &__buttons {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &--size {
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
+
+  &--grey-color {
+    color: $font_description_color;
+  }
+
+  &--pink-color {
+    color: $font_theme_color;
+  }
+
+  &--margin-bottom {
+    margin-bottom: 25px;
+  }
+
+  &__button {
+    @media screen and (min-width: 768px) {
+      &:last-child {
+        margin-left: 15px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__box {
+    background-color: $ice_coffee_color;
+    color: $white;
+    border-radius: 4px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      height: 16px;
+      width: 80px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      height: 28px;
+      width: 73px;
+    }
+  }
+
+  &__box-foodtruck {
+    width: 130px;
+    height: 16px;
+    background-color: $milkshake_color;
+    color: $white;
+    border-radius: 4px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      height: 16px;
+      width: 130px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      height: 28px;
+      width: 138px;
+    }
+  }
+
+  &__item {
+    background-color: $white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    width: 220px;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 3 * 20px) / 3);
+      margin: 10px;
+    }
+  }
+  &__card {
+    @media screen and (max-width: 767px) {
+      padding: 43px 21px 43px 20px;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 50px 32px 50px 31px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 51px 44px 62px 43px;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 10px;
+  }
+
+  &--border {
+    border-bottom: 1px solid $footer_border_color;
+  }
+
+  &--padding {
+    padding-bottom: 25px;
+  }
+
+  &--padding-top {
+    padding-top: 25px;
+  }
+}
