@@ -1,0 +1,15 @@
+.gallery {
+  padding-top: 97px;
+  background: linear-gradient(to bottom, $main_bg_color 40%, $white 60%);
+  @media screen and (min-width: 768px) {
+    padding-top: 140px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 139px;
+  }
+}
+
+.gallery__container {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,7 @@
+@mixin margin-x($mr, $ml) {
+  margin-right: $mr;
+  margin-left: $ml;
+}
+@mixin width($width) {
+  width: $width;
+}

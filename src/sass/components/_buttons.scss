@@ -1,0 +1,65 @@
+.button-flex {
+  display: flex;
+  height: 100%;
+}
+
+.button-padding {
+  padding-left: 5px;
+}
+
+.main-button {
+  cursor: pointer;
+  height: 44px;
+  border: none;
+  @media screen and (max-width: 768px) {
+    @include width(161px);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include width(191px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include width(198px);
+  }
+
+  &--red {
+    background: $main_accent_color;
+    border-radius: 22px;
+    &:hover,
+    &:focus {
+      background-color: $focus-btn;
+      transition: background-color $cubic-hover;
+      box-shadow: 0 0 10px $footer_border_color, 0 0 40px $footer_border_color,
+        0 0 80px $footer_border_color;
+    }
+  }
+  &--white {
+    background: $white;
+    border-radius: 22px;
+    &:hover,
+    &:focus {
+      background-color: $focus-second-btn;
+      transition: background-color $cubic-hover;
+      box-shadow: 0 0 10px $footer_border_color, 0 0 40px $footer_border_color,
+        0 0 80px $footer_border_color;
+    }
+  }
+}
+
+.button-text {
+  display: flex;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3px;
+  align-items: center;
+  text-align: center;
+
+  &--red {
+    color: $main_accent_color;
+  }
+  &--white {
+    color: $white;
+  }
+}
